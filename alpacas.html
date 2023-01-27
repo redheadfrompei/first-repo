@@ -1,72 +1,39 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en"> <!-- removed the -us portion so that each user can have their own type of en language-->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-      
-      table, th, td {
-        border: 1px solid black;
-      }
+    <title>Jennifer's Fibre Farm</title> <!-- moved from the header section - title goes in head section not header-->
+    <link rel="icon" type="image/x-icon" href="funny.ico">
 
-      .topmenu{
-        background-color:black; 
-        color:white;
-        padding: 15px;
-      }
 
-      footer {
-        background-color: #777;
-        padding: 10px;
-        text-align: center;
-        color: white;
-      }
-
-      section {
-        display: -webkit-flex;
-        display: flex;
-      }
-
-      .leftside {
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-        background: #ccc;
-        padding: 20px;
-      }
-
-      article {
-        -webkit-flex: 3;
-        -ms-flex: 3;
-        flex: 3;
-        background-color: #f1f1f1;
-        padding: 10px;
-      }
-
-    </style>
+    <link href="jstyle.css" rel="stylesheet" />
   </head>
 
-  <header>  
-    <title>Jennifer's Fibre Farm</title>
-    <link rel="icon" type="image/x-icon" href="funny.ico">
-    <table style="background-color:black;width:100%" >
-      <tr>
-        <th class="topmenu" style="width:2%"><a href="index.html" style="text-decoration: none;"><img src="home.PNG" alt="home button"></a></th>
-        <th class="topmenu" style="width:2%"><a href="llamas.html" style="color:white;text-decoration: none;">Llamas</a></th>
-        <th class="topmenu" style="width:2%"><a href="alpacas.html" style="color:white;text-decoration: none">Alpacas</a></th>
-        <th class="topmenu" style="width:2%"><a href="sheep.html" style="color:white;text-decoration: none">Sheep</a></th>
-        <th class="topmenu" style="width:2%"><a href="suggestions.html" style="color:white;text-decoration: none">Accessibility Suggestions</a></th>
-        <th class="topmenu" style="width:84%"></th>
-      </tr>
-    </table>
-  </header>
         
   <body>
+    <header>  <!-- moved into the body tag since header and footer belong inside the body-->
+      <div id="menu-outer">
+        <div class="table">
+          <ul id="horizontal-list">
+            <li><a href="index.html" ><img  src="home.PNG" alt="home button" ></li>
+            <li><a  href="llamas.html" ><b>Llamas</b></a></li>
+            <li><a href="alpacas.html" ><b>Alpacas</b></a></li>
+            <li><a  href="sheep.html" ><b>Sheep</b></a></li>
+            <li><a  href="suggestions.html" ><b>Accessibility Suggestions</b></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </header>
+  
+
+
     <H1>Is it a llama or an alpaca?</H1>
     <section>
       <div class="leftside">
-        <img src="alpaca.jfif" alt="A funny alpaca picture with its tongue sticking out" height="400" width="250" title="funny alpaca"> 
+        <img src="alpaca.jfif" alt="A funny alpaca picture with its tongue sticking out" height="400" width="250" title="funny alpaca"> <!-- later remove the height and width-->
       </div>
       
       <article>
@@ -89,9 +56,9 @@
         </table>
       </article>
     </section>
+    <footer> <!-- moved into the body-->
+      <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
+      <p><a href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>  
+    </foooter>    
   </body>
-  <footer>
-    <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
-    <p><a href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>  
-  </foooter>   
 </html>
