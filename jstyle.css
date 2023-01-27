@@ -1,0 +1,84 @@
+html{
+  font-family: Helvetica,Verdana, Arial, sans-serif;
+  font-size: 16px;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+
+.homeimg{
+  padding-top: 10px;
+}
+
+  .topmenu{
+    background-color:black; 
+    color:white;
+
+    }
+  header{
+    background-color: black;
+  }
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .leftside { /* example of style for a class */
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+  }
+
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+
+  #menu-outer {
+	height: 60px;
+	background-color: black;
+
+ 
+}
+
+.table {
+
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+  padding-top: 15px;
+	
+	}
+	ul#horizontal-list li {
+		display: inline;
+        text-decoration: none;
+        padding-right: 30px;
+        
+    }
+
+  ul#horizontal-list a{
+      color:white;
+      text-decoration: none;
+    
+    }
+   
+
+    
