@@ -11,11 +11,11 @@
   </head>
 
   <body>
-    <header>  <!-- moved into the body tag since header and footer belong inside the body-->
+    <header>  
       <div id="menu-outer">
         <div class="table">
           <ul id="horizontal-list">
-            <li><a href="index.html" ><img  src="home.PNG" alt="home button" ></li>
+            <li  onmouseover="hoverHome()" onmouseout="notHome()"><a href="index.html"  ><img id="home" src="home.PNG" alt="home button" ></li>
             <li><a  href="llamas.html" ><b>Llamas</b></a></li>
             <li><a href="alpacas.html" ><b>Alpacas</b></a></li>
             <li><a  href="sheep.html" ><b>Sheep</b></a></li>
@@ -23,32 +23,33 @@
           </ul>
         </div>
       </div>
+    </header>
+    <main>
+      <H1>Did you know that riding a sheep was a sport?</H1>
+      <section>
 
-    </header>    
+        <div class="leftside">
+          <img src="muttonbustin.jpg" alt="A funny picture with a girl riding a sheep" height="400" width="400" title="mutton bronco riding"> <!-- remove height and width later-->
+        </div>
+        <article>
 
-    <H1>Did you know that riding a sheep was a sport?</H1>
-    <section>
+          <h2>What is Mutton Busting</h2>
+   
+          <p>Visualize this. </p>
 
-      <div class="leftside">
-        <img src="muttonbustin.jpg" alt="A funny picture with a girl riding a sheep" height="400" width="400" title="mutton bronco riding"> <!-- remove height and width later-->
-      </div>
-      <article>
+          <p>It's a humid summer evening. The stands are packed. You have an ice cold drink in your hand. The rodeo announcer&aposs voice booms over the loudspeaker and you&apos;re on the edge of your seat as the gate man opens the bucking chute.</p> 
+          <p>Out charges 100lbs of wooly fury, a helmeted toddler is clinging to the sheep&apos;s back and the crowd goes wild. </p>
+          <p>Did you know “Mutton Bustin” was invented in Alberta at the world famous Daines Ranch Pro Rodeo? </p>
+          <p>Mutton Bustin is an entertaining children&apos;s event in which a small child is placed on the back of a sheep. When the chute cracks the sheep runs out and the kid who stays on the longest wins!</p> 
 
-        <h3>What is Mutton Busting</h3>
-        <br>
-        <p>Visualize this. </p>
-
-        <p>It's a humid summer evening. The stands are packed. You have an ice cold drink in your hand. The rodeo announcer&aposs voice booms over the loudspeaker and you&apos;re on the edge of your seat as the gate man opens the bucking chute.</p> 
-        <p>Out charges 100lbs of wooly fury, a helmeted toddler is clinging to the sheep&aposs back and the crowd goes wild. </p>
-        <p>Did you know “Mutton Bustin” was invented in Alberta at the world famous Daines Ranch Pro Rodeo? </p>
-        <p>Mutton Bustin is an entertaining children&apos;s event in which a small child is placed on the back of a sheep. When the chute cracks the sheep runs out and the kid who stays on the longest wins!</p> 
-
-        <p>Jack Daines, founder of the Daines Ranch Pro Rodeo, thought of the idea because he didn't want any children getting injured trying to ride the larger bovines. He brought some of the family's sheep to the bucking chutes and the rest is history. Mutton Bustin’ is now included in half time shows around the world.</p> 
-      </article>
-    </section>
+          <p>Jack Daines, founder of the Daines Ranch Pro Rodeo, thought of the idea because he didn't want any children getting injured trying to ride the larger bovines. He brought some of the family's sheep to the bucking chutes and the rest is history. Mutton Bustin’ is now included in half time shows around the world.</p> 
+        </article>
+      </section>
+    </main>
     <footer> <!-- moved into the body-->
       <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
       <p><a href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>  
     </foooter>  
+    <script src="myscript.js"></script>
   </body> 
 </html>

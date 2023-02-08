@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="jstyle.css" rel="stylesheet" />
-      <title>Jennifer's Fibre Farm</title>
-      <link rel="icon" type="image/x-icon" href="funny.ico">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="jstyle.css" rel="stylesheet" />
+    <title>Jennifer's Fibre Farm</title>
+    <link rel="icon" type="image/x-icon" href="funny.ico">
     
-
-</style>  
-</head>
-<body>
-  <header>  
-    <div id="menu-outer">
-      <div class="table">
-        <ul id="horizontal-list">
-          <li><a href="index.html" ><img  src="home.PNG" alt="home button" ></li>
-          <li><a  href="llamas.html" ><b>Llamas</b></a></li>
-          <li><a href="alpacas.html" ><b>Alpacas</b></a></li>
-          <li><a  href="sheep.html" ><b>Sheep</b></a></li>
-          <li><a  href="suggestions.html" ><b>Accessibility Suggestions</b></a></li>
-        </ul>
+    <style>
+      p {
+          margin: 0 0 0 0;  
+        }
+      input { margin-bottom: 5px;}
+    </style>  
+  </head>
+  <body>
+    <header>  
+      <div id="menu-outer">
+        <div class="table">
+          <ul id="horizontal-list">
+            <li  onmouseover="hoverHome()" onmouseout="notHome()"><a href="index.html"  ><img id="home" src="home.PNG" alt="home button" ></li>
+            <li><a  href="llamas.html" ><b>Llamas</b></a></li>
+            <li><a href="alpacas.html" ><b>Alpacas</b></a></li>
+            <li><a  href="sheep.html" ><b>Sheep</b></a></li>
+            <li><a  href="suggestions.html" ><b>Accessibility Suggestions</b></a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
+    <main>
+      <H1>Accessibility Issues</H1>
+      <section>
+
+        <div class="leftside">
+          <p>Here at Jennifer's Fibre Farm we are concerned with the Accessibility of our website</p>
+ 
+          <H2>Some suggesions of Accessibility issues</H2>
+          <ol>
+            <li>Inappropriate Alternative Text on Images</li>
+            <li>Poor Contrast Text</li>
+            <li>Heading Hierarchy</li>
+            <li>Too Many Navigation Links</li>
+            <li>Poorly Structured Form labels</li>
+            <li>Using Non-descriptive Links</li>
+            <li>Lack of Keyboard Accessibility and Navigability</li>
+            <li>Embedding Inaccessible Documents</li>
+            <li>Forgetting about Mobile-First</li>
+            <li>Add Subtitles and Captions to Videos</li>
+              
+          </ol>
+          <H2>Please Enter your accessibility suggestions here</H2>
+          <form>
+
+            <p>  <label for="Name">Name:</label> </p>
+            <p> <input type="text" id="Name" name="Name"></p>
+            <p>  <label for="email">Email address:</label> </p>
+            <p><input type="text" id="email" name="email"> </p>
+            <p>  <label for="dateofbirth">Date of Birth:</label> </p>
+            <p><input type="date" id="dateofbirth" name="dateofbirth"> </p>
+            <p>  <label for="suggestion">Enter your suggestion here:</label> </p>
+            <p> <textarea id="suggestion" name="suggestion" rows="10" cols="50" placeholder="Enter in your accessibility suggestions here"></textarea> </p>
+
+            <p> <input type="button" id="submit" value="Submit" onclick="submitSuggestion()" > </input>
+            <input type="button" id="reset" value="Reset" onclick="resetSuggestion()"></input> </p>
   
-  <H1>Accessibility issues</H1>
-    <P>Here at Jennifer's Fibre Farm we are concerned with the Accessibility of our website</P>
-    <br> 
-    <H3>Some suggesions of Accessibility issues</H3>
-    <ol>
-    <li>Inappropriate Alternative Text on Images</li>
-    <li>Poor Contrast Text</li>
-    <li>Heading Hierarchy</li>
-    <li>Too Many Navigation Links</li>
-    <li>Poorly Structured Form labels</li>
-    <li>Using Non-descriptive Links</li>
-    <li>Lack of Keyboard Accessibility and Navigability</li>
-    <li>Embedding Inaccessible Documents</li>
-    <li>Forgetting about Mobile-First</li>
-    <li>Add Subtitles and Captions to Videos</li>
-        
-    </ol>
-  <H2>Please Enter your accessibility suggestions here</H2>
-<form>
-  <label for="suggestion">Enter your suggesion here:</label><br>
- <textarea id="suggestion" name="suggestion" rows="10" cols="50" placeholder="Enter in your accessibility suggestions here"></textarea>
- <br>
- <input type="submit" value="submit"> </input>
- 
-</form>
-<footer>
-  <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
-  <p><a href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>  
- </foooter>
- 
-</body>
+          </form>
+        </div>
+        <article id="laughingllama" style="visibility:hidden">
+          <h2 id="Thankheader"></h2>
+          <p id="Thankyou"></p> 
+        </article>
+      </section>
+    </main>
+    <footer>
+    <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
+      <p><a href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>  
+    </foooter>
+    <script src="myscript.js"></script>
+  </body>
 </html>

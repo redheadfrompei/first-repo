@@ -11,11 +11,11 @@
   </head>
 
   <body>
-    <header>  <!-- moved into the body tag since header and footer belong inside the body-->
+    <header>  
       <div id="menu-outer">
         <div class="table">
           <ul id="horizontal-list">
-            <li><a href="index.html" ><img  src="home.PNG" alt="home button" ></li>
+            <li  onmouseover="hoverHome()" onmouseout="notHome()"><a href="index.html"  ><img id="home" src="home.PNG" alt="home button" ></li>
             <li><a  href="llamas.html" ><b>Llamas</b></a></li>
             <li><a href="alpacas.html" ><b>Alpacas</b></a></li>
             <li><a  href="sheep.html" ><b>Sheep</b></a></li>
@@ -23,37 +23,40 @@
           </ul>
         </div>
       </div>
+    </header>
+    <main>
+      <H1>Llamas, Llamas Everywhere</H1>
+      <section>
+        <div class="leftside">
+          <img src="llama.jfif" alt="A funny llama picture with alot of hair and buck teeth" height="400" width="250" title="funny llama"> <!-- remove width and height later-->
+        </div>
 
-    </header>      
-    <H1>Llamas, Llamas Everywhere</H1>
-    <section>
-      <div class="leftside">
-        <img src="llama.jfif" alt="A funny llama picture with alot of hair and buck teeth" height="400" width="250" title="funny llama"> <!-- remove width and height later-->
-      </div>
-
-      <article>
-        <h3>interesting facts about llamas</h3>
-        <ul>
-          <li>The llama is a South American relative of the camel, though the llama does not have a hump.  Llamas appear to have originated from the central plains of North America about 40 million years ago. They migrated to South America about 3 million years ago.</li>
-          <li>Fact 1 - Definition: The llama (Lama glama) is a wild or domesticated South American cud-chewing animal related to camels but smaller and lacking a hump. A member of the camelids which includes Camels, llamas, and Alpacas.</li>
-          <li>About 3 million years ago, llamas' ancestors migrated to South America. Camelids first appeared on the Central Plains of North America about 40 million years ago. Llamas are members of the camelid, or camel, family.</li>
-        </ul>
-        <a href="https://www.thoughtco.com/fun-facts-about-llamas-3880940" target="_blank" title="link to fun facts about llamas"> More fun facts about llamas</a>
-        <br><br>
-        <table>
-          <tr>
-            <th>joke</th><th>answer</th>
-          </tr>
-          <tr>
-              <td>How do llamas wake up for work in the morning</td>
-              <td><a href="alpacaanswer.html">Answer</a></td>
-          </tr>
-        </table>
-      </article>
-    </section>
+        <article>
+          <h2>interesting facts about llamas</h2>
+          <ul>
+            <li>The llama is a South American relative of the camel, though the llama does not have a hump.  Llamas appear to have originated from the central plains of North America about 40 million years ago. They migrated to South America about 3 million years ago.</li>
+            <li>Fact 1 - Definition: The llama (Lama glama) is a wild or domesticated South American cud-chewing animal related to camels but smaller and lacking a hump. A member of the camelids which includes Camels, llamas, and Alpacas.</li>
+            <li>About 3 million years ago, llamas' ancestors migrated to South America. Camelids first appeared on the Central Plains of North America about 40 million years ago. Llamas are members of the camelid, or camel, family.</li>
+          </ul>
+          <a href="https://www.thoughtco.com/fun-facts-about-llamas-3880940" target="_blank" title="link will open in new tab"> More fun facts about llamas</a>
+         <p>
+          <table>
+            <tr>
+              <th scope="col">Joke</th><th scope="col">Answer</th>
+            </tr>
+            <tr>
+                <td>How do llamas wake up for work in the morning</td>
+                <td><a href="alpacaanswer.html">Answer</a></td>
+            </tr>
+          </table>
+        </p>
+        </article>
+      </section>
+    </main>
     <footer> <!-- moved into the body-->
       <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
       <p><a href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>  
     </foooter>  
+    <script src="myscript.js"></script>
   </body>
 </html>

@@ -9,6 +9,7 @@ table, th, td {
   }
 
 
+
 .homeimg{
   padding-top: 10px;
 }
@@ -41,23 +42,24 @@ table, th, td {
     padding: 20px;
   }
 
+
+ 
   article {
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
     background-color: #f1f1f1;
-    padding: 10px;
+    padding-left: 10px;
+    
   }
 
   #menu-outer {
-	height: 60px;
+	min-height: 60px;
 	background-color: black;
-
  
 }
 
 .table {
-
 	margin: 0 auto;
 }
 
@@ -65,20 +67,67 @@ ul#horizontal-list {
 	min-width: 696px;
 	list-style: none;
   padding-top: 15px;
-	
+
 	}
 	ul#horizontal-list li {
 		display: inline;
         text-decoration: none;
-        padding-right: 30px;
-        
+  /*      margin-right: 30px; */
+        padding: 10px 16px;
+  
+  
     }
 
   ul#horizontal-list a{
       color:white;
       text-decoration: none;
-    
+  
     }
-   
 
-    
+  ul#horizontal-list li:hover{
+
+    background-color: green;
+    document.getElementById("home").visibility="hidden"
+  }
+
+  input[type=text], [type=date]{
+ 
+    min-width: 300px;
+   padding: 5px 5px; 
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+    font-family: Helvetica,Verdana, Arial, sans-serif;
+    font-size: 14px;
+  }
+
+  input[type=text]:focus {
+    border: 2px solid #555;
+  }
+
+  input[type=date]:focus {
+    border: 2px solid #555;
+  }
+  
+  
+  textarea {
+    font-family: Helvetica,Verdana, Arial, sans-serif;
+    font-size: 14px;
+    height: 150px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+  input[id="submit"], [id="reset"]  {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
