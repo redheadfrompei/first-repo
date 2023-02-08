@@ -65,8 +65,8 @@ function submitSuggestion(){
     const mydate = document.getElementById("dateofbirth").value;
     const newdate = new Date(mydate);
 
-    const underagePrize = "coupon for a free poster of a funny llama "; 
-    const overagePrize = "coupon for a free bottle of wine ";
+    const underagePrize = "because you are under 19 years of age, a coupon for a free poster of a funny llama "; 
+    const overagePrize = "because you are over 19 years of age, a coupon for a free bottle of wine ";
     
     let answerText="";
    
@@ -78,7 +78,7 @@ function submitSuggestion(){
         answerText=underagePrize;
     }
     document.getElementById("Thankheader").innerHTML= "Thank you for your suggestion " + myName;
-    document.getElementById("Thankyou").innerHTML="We have received the following suggestion: <p >" +suggestiontext + "</p><p> To thank you for your suggestion, a "+ answerText + " has been sent to <strong>" + myEmail + "</strong></p>";    
+    document.getElementById("Thankyou").innerHTML="We have received the following suggestion: <p >" +suggestiontext + "</p><p> To thank you for your suggestion,  "+ answerText + " has been sent to <strong>" + myEmail + "</strong></p>";    
     document.getElementById("laughingllama").style.visibility='visible'; 
 }
 function hoverHome(){
