@@ -18,7 +18,7 @@
       <div id="menu-outer">
         <div class="table">
           <ul id="horizontal-list">
-            <li class="homeimg"><a href="index.html" ><img  src="home.PNG" alt="home button"  ></li>
+            <li  onmouseover="hoverHome()" onmouseout="notHome()"><a href="index.html"  ><img id="home" src="home.PNG" alt="home button" ></li>
             <li><a  href="llamas.html" ><b>Llamas</b></a></li>
             <li><a href="alpacas.html" ><b>Alpacas</b></a></li>
             <li><a  href="sheep.html" ><b>Sheep</b></a></li>
@@ -26,10 +26,9 @@
           </ul>
         </div>
       </div>
-
-
-
-    </header>    
+    </header>
+    
+    <main>
     <H1 style="text-align:center">Welcome to Jennifer's Fibre Farm</H1> <!-- example of inline style-->
     <hr>
 
@@ -39,15 +38,17 @@
       </div>
       
       <article>
-        <h2>What We Do</h2>
+        <H2>What We Do</H2>
         <p>Here at Jennifer's fibre farm our primary business is to raise alpacas, llamas and sheep to produce funny stock photos for websites.</p>
         <p>But what to do with all that llama, sheep and alpaca wool?</p>
-        <p>So we have a side hustle of selling llama, sheep and alpaca wool fibre for whatever your crafting needs are.</p>
+        <p>We have a side hustle of selling llama, sheep and alpaca wool fibre for whatever your crafting needs are.</p>
       </article>
     </section>
+  </main>
     <footer> <!-- moved into the body-->
       <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
       <p><a href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>  
     </foooter>        
   </body>
+  <script src="myscript.js"></script>
 </html>

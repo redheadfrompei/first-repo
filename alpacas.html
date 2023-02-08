@@ -13,11 +13,11 @@
 
         
   <body>
-    <header>  <!-- moved into the body tag since header and footer belong inside the body-->
+    <header>  
       <div id="menu-outer">
         <div class="table">
           <ul id="horizontal-list">
-            <li><a href="index.html" ><img  src="home.PNG" alt="home button" ></li>
+            <li  onmouseover="hoverHome()" onmouseout="notHome()"><a href="index.html"  ><img id="home" src="home.PNG" alt="home button" ></li>
             <li><a  href="llamas.html" ><b>Llamas</b></a></li>
             <li><a href="alpacas.html" ><b>Alpacas</b></a></li>
             <li><a  href="sheep.html" ><b>Sheep</b></a></li>
@@ -25,40 +25,40 @@
           </ul>
         </div>
       </div>
-
     </header>
-  
-
-
-    <H1>Is it a llama or an alpaca?</H1>
-    <section>
-      <div class="leftside">
-        <img src="alpaca.jfif" alt="A funny alpaca picture with its tongue sticking out" height="400" width="250" title="funny alpaca"> <!-- later remove the height and width-->
-      </div>
-      
-      <article>
-        <h3>So what is the difference between Llamas and Alpacas anyways?</h3>
-        <ul>
-          <li>The most-noticeable difference between the two animals is their sizes. Alpacas are smaller, around 90 cm (35 inches) high at the shoulder and between 55 and 65 kg (121 to 143 pounds). Llamas are the biggest lamoid at about 120 cm (47 inches) at the shoulder and about 113 kg (250 pounds). So llamas are going to be a lot bigger than their cousins.</li>
-          <li>Their faces are also dissimilar: alpacas have small, blunt faces with short ears, while llamas have more-elongated faces with banana-sized ears.</li>
-          <li>Alpacas have shaggy hair that is used for fleece production. Their hair color can vary greatly, from whites and light yellows to browns and blacks. Llamas&apos; hair is coarser, and their wool is considered inferior, but llama breeders are working to create a llama breed with finer, softer hair.</li>
-        </ul>
-        <a href="https://a-z-animals.com/animals/alpaca/#single-animal-text" target="_blank" title="link to fun facts about alpacas"> More fun facts about alpacas</a>
-        <br><br>
-        <table>
-          <tr>
-            <th>joke</th><th>answer</th>
-          </tr>
-          <tr>
-            <td>Why don’t alpacas like singing with backing music?</td>
-            <td><a href="answer.html">Answer</a></td>
-          </tr>
-        </table>
-      </article>
-    </section>
+    <main>
+      <H1>Is it a llama or an alpaca?</H1>
+      <section>
+        <div class="leftside">
+          <img src="alpaca.jfif" alt="A funny alpaca picture with its tongue sticking out" height="400" width="250" title="funny alpaca"> <!-- later remove the height and width-->
+        </div>
+        
+        <article>
+          <h2>So what is the difference between Llamas and Alpacas anyways?</h2>
+          <ul>
+            <li>The most-noticeable difference between the two animals is their sizes. Alpacas are smaller, around 90 cm (35 inches) high at the shoulder and between 55 and 65 kg (121 to 143 pounds). Llamas are the biggest lamoid at about 120 cm (47 inches) at the shoulder and about 113 kg (250 pounds). So llamas are going to be a lot bigger than their cousins.</li>
+            <li>Their faces are also dissimilar: alpacas have small, blunt faces with short ears, while llamas have more-elongated faces with banana-sized ears.</li>
+            <li>Alpacas have shaggy hair that is used for fleece production. Their hair color can vary greatly, from whites and light yellows to browns and blacks. Llamas&apos; hair is coarser, and their wool is considered inferior, but llama breeders are working to create a llama breed with finer, softer hair.</li>
+          </ul>
+          <a href="https://a-z-animals.com/animals/alpaca/#single-animal-text" target="_blank" title="link will open in new tab"> More fun facts about alpacas</a>
+          <p>
+          <table>
+            <tr>
+              <th scope="col">Joke</th><th scope="col">Answer</th>
+            </tr>
+            <tr>
+              <td>Why don’t alpacas like singing with backing music?</td>
+              <td><a href="answer.html">Answer</a></td>
+            </tr>
+          </table>
+        </p>  
+        </article>
+      </section>
+    </main>
     <footer> <!-- moved into the body-->
       <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
       <p><a href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>  
-    </foooter>    
+    </foooter>
+    <script src="myscript.js"></script>    
   </body>
 </html>
