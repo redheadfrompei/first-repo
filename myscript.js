@@ -83,7 +83,7 @@ function submitSuggestion(){
 }
 function hoverHome(){
 
-    document.getElementById("home").src="home_hover.PNG";
+    document.getElementById("home").src="home_hover.png";
     
 }
 function notHome(){
