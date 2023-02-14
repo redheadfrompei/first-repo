@@ -29,6 +29,10 @@ table, th, td {
     color: white;
   }
 
+  a:link{
+    color: white;
+  }
+
   section {
     display: -webkit-flex;
     display: flex;
