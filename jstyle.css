@@ -10,6 +10,7 @@ table, th, td {
 
 
 
+
 .homeimg{
   padding-top: 10px;
 }
@@ -28,6 +29,8 @@ table, th, td {
     text-align: center;
     color: white;
   }
+
+
 
   section {
     display: -webkit-flex;
@@ -63,6 +66,8 @@ table, th, td {
 	margin: 0 auto;
 }
 
+
+
 ul#horizontal-list {
 	min-width: 696px;
 	list-style: none;
@@ -90,6 +95,7 @@ ul#horizontal-list {
     background-color: green;
     document.getElementById("home").visibility="hidden"
   }
+
 
   input[type=text], [type=date]{
  
@@ -132,3 +138,10 @@ ul#horizontal-list {
     margin: 4px 2px;
     cursor: pointer;
   }
+
+  .nocolor a:link{
+    color:white;
+    }
+    .nocolor a:visited{
+      color:white;
+      }
