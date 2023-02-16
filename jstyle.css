@@ -132,16 +132,22 @@ ul#horizontal-list {
   input[id="submit"], [id="reset"]  {
     background-color: #04AA6D;
     border: none;
-    color: white;
+    color: black;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
-  }
+    
 
+  
+  }
+#validationerrors {
+  color: #900000;
+}
   .nocolor a:link{
     color:white;
     }
     .nocolor a:visited{
       color:white;
+  
       }

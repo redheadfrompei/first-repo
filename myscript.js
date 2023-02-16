@@ -63,13 +63,24 @@ function submitSuggestion(){
     const myName=document.getElementById("Name").value;
     const myEmail=document.getElementById("email").value;
     const mydate = document.getElementById("dateofbirth").value;
+    let errorText="";
     const newdate = new Date(mydate);
 
     const underagePrize = "because you are under 19 years of age, a coupon for a free poster of a funny llama "; 
     const overagePrize = "because you are over 19 years of age, a coupon for a free bottle of wine ";
     
     let answerText="";
-   
+    if (myName==""){
+      errorText="<p>Name is Mandatory.</p>";
+    }
+    if (myEmail==""){
+      errorText = errorText + "<p>Email is Mandatory.</p>";
+    }
+    if (mydate == "")
+    {
+      errorText = errorText + "<p>date of birth is Mandatory.</p>";
+    }
+   if (errorText==""){
     if (isOver19(newdate))
     {
        answerText=overagePrize;
@@ -80,6 +91,9 @@ function submitSuggestion(){
     document.getElementById("Thankheader").innerHTML= "Thank you for your suggestion " + myName;
     document.getElementById("Thankyou").innerHTML="We have received the following suggestion: <p >" +suggestiontext + "</p><p> To thank you for your suggestion,  "+ answerText + " has been sent to <strong>" + myEmail + "</strong></p>";    
     document.getElementById("laughingllama").style.visibility='visible'; 
+  } 
+    document.getElementById("validationerrors").innerHTML = errorText;
+
 }
 function hoverHome(){
 

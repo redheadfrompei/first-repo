@@ -19,7 +19,7 @@
       <div id="menu-outer">
         <div class="table">
           <ul id="horizontal-list">
-            <li  onmouseover="hoverHome()" onmouseout="notHome()"><a href="index.html"  ><img id="home" src="home.PNG" alt="home button" ></li>
+            <li  onmouseover="hoverHome()" onmouseout="notHome()"><a href="index.html" ><img id="home" src="home.PNG" alt="home button" ></a></li>
             <li><a  href="llamas.html" ><strong>Llamas</strong></a></li>
             <li><a href="alpacas.html" ><strong>Alpacas</strong></a></li>
             <li><a  href="sheep.html" ><strong>Sheep</strong></a></li>
@@ -60,21 +60,24 @@
             <p><input type="date" id="dateofbirth" name="dateofbirth"> </p>
             <p>  <label for="suggestion">Enter your suggestion here:</label> </p>
             <p> <textarea id="suggestion" name="suggestion" rows="10" cols="50" placeholder="Enter in your accessibility suggestions here"></textarea> </p>
-
+           
             <p> <input type="button" id="submit" value="Submit" onclick="submitSuggestion()" > </input>
             <input type="button" id="reset" value="Reset" onclick="resetSuggestion()"></input> </p>
+            <p id="validationerrors"></p>
   
           </form>
         </div>
         <article id="laughingllama" style="visibility:hidden">
-          <h2 id="Thankheader"></h2>
+          <h2 id="Thankheader">Thank you</h2>
           <p id="Thankyou"></p> 
         </article>
       </section>
     </main>
     <footer>
     <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
-      <p><a href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>  
+     <div class="nocolor">
+      <p><a href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p> 
+    </div> 
     </foooter>
     <script src="myscript.js"></script>
   </body>
