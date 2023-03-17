@@ -9,7 +9,9 @@ table, th, td {
   }
 
 
-
+.suggestion{
+  margin-top: 20px;
+}
 
 .homeimg{
   padding-top: 10px;
@@ -24,10 +26,10 @@ table, th, td {
     background-color: black;
   }
   footer {
-    background-color: #776;
+    background-color: lemonchiffon;
     padding: 10px;
     text-align: center;
-    color: white;
+    color: black;
   }
 
 
@@ -41,7 +43,7 @@ table, th, td {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    background: #ccc;
+    background: #ECECEC;
     padding: 20px;
   }
 
@@ -51,7 +53,7 @@ table, th, td {
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
-    background-color: #f1f1f1;
+    background-color: white;
     padding-left: 10px;
     
   }
@@ -93,7 +95,7 @@ ul#horizontal-list {
   ul#horizontal-list li:hover{
 
     background-color: green;
-    document.getElementById("home").visibility="hidden"
+    document.getElementById("home").visibility="hidden";
   }
 
 
@@ -141,13 +143,43 @@ ul#horizontal-list {
 
   
   }
+
+
+  #simple .wb-eqht section {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    #simple .wb-eqht section {
+      width: 49%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    #simple .wb-eqht section {
+      width: 33%;
+    }
+  }
+  
+  .required:before {
+    content:"* ";
+    color: #D40100;
+  }
+  .required:after {
+    content:" (required)";
+    color: #D40100;
+  }
 #validationerrors {
-  color: #900000;
+  color: #D40100;
 }
   .nocolor a:link{
-    color:white;
+    color:black;
     }
     .nocolor a:visited{
-      color:white;
+      color:black;
   
       }
+

@@ -16,6 +16,7 @@
   </head>
   <body>
     <header>  
+      <nav>
       <div id="menu-outer">
         <div class="table">
           <ul id="horizontal-list">
@@ -27,6 +28,7 @@
           </ul>
         </div>
       </div>
+    </nav>
     </header>
     <main>
       <H1>Accessibility Issues</H1>
@@ -50,22 +52,25 @@
               
           </ol>
           <H2>Please Enter your accessibility suggestions here</H2>
+          <p>Mandatory fields are marked with an asterisk</p>
+          <div class="suggestion">
           <form>
 
-            <p>  <label for="Name">Name:</label> </p>
-            <p> <input type="text" id="Name" name="Name"></p>
-            <p>  <label for="email">Email address:</label> </p>
-            <p><input type="text" id="email" name="email"> </p>
-            <p>  <label for="dateofbirth">Date of Birth:</label> </p>
-            <p><input type="date" id="dateofbirth" name="dateofbirth"> </p>
+            <p>  <label for="Name" class="required">Name:</label> </p>
+            <p> <input type="text" id="Name" name="Name" autocomplete="name" required="required"></p>
+            <p>  <label for="email" class="required">Email address:</label> </p>
+            <p><input type="text" id="email" name="email" autocomplete="email" required="required"> </p>
+            <p>  <label for="dateofbirth" class="required" autocomplete="dateofbirth">Date of Birth (MM/DD/YYYY):</label> </p>
+            <p><input type="date" id="dateofbirth" name="dateofbirth" required="required"> </p>
             <p>  <label for="suggestion">Enter your suggestion here:</label> </p>
-            <p> <textarea id="suggestion" name="suggestion" rows="10" cols="50" placeholder="Enter in your accessibility suggestions here"></textarea> </p>
+            <p> <textarea id="suggestion" name="suggestion" rows="10" cols="50" placeholder="Suggestion to improve accessibility:"></textarea> </p>
            
             <p> <input type="button" id="submit" value="Submit" onclick="submitSuggestion()" > </input>
             <input type="button" id="reset" value="Reset" onclick="resetSuggestion()"></input> </p>
             <p id="validationerrors"></p>
   
           </form>
+        </div>
         </div>
         <article id="laughingllama" style="visibility:hidden">
           <h2 id="Thankheader">Thank you</h2>
