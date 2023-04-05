@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jennifer's Fibre Farm</title> <!-- moved from the header section - title goes in head section not header-->
+    <title>Llamas-Jennifer's Fibre Farm</title> <!-- moved from the header section - title goes in head section not header-->
     <link rel="icon" type="image/x-icon" href="funny.ico">
 
     <link href="jstyle.css" rel="stylesheet" />
@@ -12,6 +12,15 @@
 
   <body>
     <header>  
+      <nav>
+        <ul>
+          <li>
+            <div class="skl">         
+            <a href="#maincontent">Skip to Main content</a>
+          </div>
+          </li>
+          
+        </ul>
       <div id="menu-outer">
         <div class="table">
           <ul id="horizontal-list">
@@ -23,9 +32,10 @@
           </ul>
         </div>
       </div>
+    </nav>
     </header>
     <main>
-      <H1>Llamas, Llamas Everywhere</H1>
+      <H1 id="maincontent">Llamas, Llamas Everywhere</H1>
       <section>
         <div class="wb-eqht">
           <img src="llama.jpg" alt="A funny llama picture with alot of hair and buck teeth" height=auto; max-width="100%" title="funny llama"> <!-- remove width and height later-->
@@ -46,7 +56,7 @@
             </tr>
             <tr>
                 <td>How do llamas wake up for work in the morning</td>
-                <td><a href="alpacaanswer.html">Answer</a></td>
+                <td><span hidden>Joke Answer to how do llamas wake up for work in the morning</span><a href="answer.html">Answer</a></td>
             </tr>
           </table>
         </p>
@@ -55,9 +65,9 @@
     </main>
     <footer> <!-- moved into the body-->
       <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
-      <p>
+     
         <div class="nocolor">
-        <a  href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>
+          <p><a  href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>
       </div>  
     </foooter>   
     <script src="myscript.js"></script>
