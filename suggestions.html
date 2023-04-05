@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="jstyle.css" rel="stylesheet" />
-    <title>Jennifer's Fibre Farm</title>
+    <title>Accessibility Suggestions-Jennifer's Fibre Farm</title>
     <link rel="icon" type="image/x-icon" href="funny.ico">
     
     <style>
@@ -17,6 +17,14 @@
   <body>
     <header>  
       <nav>
+      <ul>
+        <li>
+          <div class="skl">         
+          <a href="#maincontent">Skip to Main content</a>
+        </div>
+        </li>
+        
+      </ul>
       <div id="menu-outer">
         <div class="table">
           <ul id="horizontal-list">
@@ -31,13 +39,13 @@
     </nav>
     </header>
     <main>
-      <H1>Accessibility Issues</H1>
+      <H1 id="maincontent">Accessibility Suggestions</H1>
       <section>
 
-        <div class="leftside">
+        <div class="leftside" >
           <p>Here at Jennifer's Fibre Farm we are concerned with the Accessibility of our website</p>
  
-          <H2>Some suggesions of Accessibility issues</H2>
+          <H2>Accessibility suggestion examples:</H2>
           <ol>
             <li>Inappropriate Alternative Text on Images</li>
             <li>Poor Contrast Text</li>
@@ -52,23 +60,35 @@
               
           </ol>
           <H2>Please Enter your accessibility suggestions here</H2>
-          <p>Mandatory fields are marked with an asterisk</p>
+       
+
+
+
+
+
+
           <div class="suggestion">
           <form>
-
-            <p>  <label for="Name" class="required">Name:</label> </p>
-            <p> <input type="text" id="Name" name="Name" autocomplete="name" required="required"></p>
-            <p>  <label for="email" class="required">Email address:</label> </p>
-            <p><input type="text" id="email" name="email" autocomplete="email" required="required"> </p>
-            <p>  <label for="dateofbirth" class="required" autocomplete="dateofbirth">Date of Birth (MM/DD/YYYY):</label> </p>
-            <p><input type="date" id="dateofbirth" name="dateofbirth" required="required"> </p>
-            <p>  <label for="suggestion">Enter your suggestion here:</label> </p>
-            <p> <textarea id="suggestion" name="suggestion" rows="10" cols="50" placeholder="Suggestion to improve accessibility:"></textarea> </p>
+           <div class="validationerrors"></div> 
            
-            <p> <input type="button" id="submit" value="Submit" onclick="submitSuggestion()" > </input>
-            <input type="button" id="reset" value="Reset" onclick="resetSuggestion()"></input> </p>
-            <p id="validationerrors"></p>
-  
+
+            
+              <label for="Name">Name: <strong class="required">(required)</strong></label>
+              <input type="text" id="Name" name="Name" autocomplete="name" required="required" class="string">
+            
+            
+              <label for="email" >Email address: <strong class="required">(required)</strong></label>
+              <input type="text" id="email" name="email" autocomplete="email" required="required" class="email" >
+            
+              <label for="dateofbirth" autocomplete="dateofbirth">Date of Birth (MM/DD/YYYY): <strong class="required">(required)</strong></label> 
+              <input type="date" id="dateofbirth" name="dateofbirth" placeholder="yyyy-mm-dd" required="required" class="string"> 
+          
+            <label for="suggestion">Enter your suggestion here:</label>
+            <textarea id="suggestion" name="suggestion" rows="10" cols="50" placeholder="Suggestion to improve accessibility:"></textarea> 
+          
+            <input type="button" id="submit" value="Submit" onclick="submitSuggestion()" > </input>
+            <input type="button" id="reset" value="Reset" onclick="resetSuggestion()"></input>
+          
           </form>
         </div>
         </div>

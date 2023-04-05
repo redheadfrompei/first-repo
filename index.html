@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jennifer's Fibre Farm</title> <!-- moved from the header section - title goes in head section not header-->
+    <title>Home-Jennifer's Fibre Farm</title> <!-- moved from the header section - title goes in head section not header-->
     <link rel="icon" type="image/x-icon" href="funny.ico">
     <link href="jstyle.css" rel="stylesheet" />
     <style> /* embedded CSS section */
@@ -15,6 +15,15 @@
   </head>
   <body>
     <header>  
+      <nav>
+        <ul>
+          <li>
+            <div class="skl">         
+            <a href="#maincontent">Skip to Main content</a>
+          </div>
+          </li>
+          
+        </ul>
       <div id="menu-outer">
         <div class="table">
           <ul id="horizontal-list">
@@ -26,15 +35,16 @@
           </ul>
         </div>
       </div>
+      </nav>
     </header>
     
     <main>
-    <H1 style="text-align:center">Welcome to Jennifer's Fibre Farm</H1> <!-- example of inline style-->
+    <H1 style="text-align:center" id="maincontent">Welcome to Jennifer's Fibre Farm</H1> <!-- example of inline style-->
     <hr>
 
     <section>
       <div class="leftside">
-        <img src="farm.jpg" width="500" height="300" alt="picture of llama and sheep in a pasture on Jennifer's fibre farm"> <!-- remove width and height later-->
+        <img src="farm.jpg" max-width="100%" height=auto; alt="picture of llama and sheep in a pasture on Jennifer's fibre farm"> <!-- remove width and height later-->
       </div>
       
       <article>
@@ -47,10 +57,11 @@
   </main>
     <footer> <!-- moved into the body-->
       <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
-      <p>
+      
         <div class="nocolor">
-        <a  href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>
+          <p><a  href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>
       </div>  
+    
     </foooter>        
   </body>
   <script src="myscript.js"></script>

@@ -14,6 +14,15 @@
         
   <body>
     <header>  
+      <nav>
+        <ul>
+          <li>
+            <div class="skl">         
+            <a href="#maincontent">Skip to Main content</a>
+          </div>
+          </li>
+          
+        </ul>
       <div id="menu-outer">
         <div class="table">
           <ul id="horizontal-list">
@@ -25,12 +34,13 @@
           </ul>
         </div>
       </div>
+      </nav>
     </header>
     <main>
-      <H1>Is it a llama or an alpaca?</H1>
+      <H1 id="maincontent">Is it a llama or an alpaca?</H1>
       <section>
         <div class="leftside">
-          <img src="alpaca.jfif" alt="A funny alpaca picture with its tongue sticking out" height="400" width="250" title="funny alpaca"> <!-- later remove the height and width-->
+          <img src="alpaca.jfif" alt="A funny alpaca picture with its tongue sticking out" height=auto; max-width="100%"  title="funny alpaca"> <!-- later remove the height and width-->
         </div>
         
         <article>
@@ -48,7 +58,7 @@
             </tr>
             <tr>
               <td>Why don’t alpacas like singing with backing music?</td>
-              <td><a href="answer.html">Answer</a></td>
+              <td><a href="alpacaanswer.html">Answer</a></td>
             </tr>
           </table>
         </p>  
@@ -57,9 +67,9 @@
     </main>
     <footer> <!-- moved into the body-->
       <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
-      <p>
+     
         <div class="nocolor">
-        <a  href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>
+          <p><a  href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>
       </div>  
     </foooter>   
     <script src="myscript.js"></script>    
