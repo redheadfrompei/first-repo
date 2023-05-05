@@ -265,7 +265,7 @@ function validateForm(objForm2)
       objTitle = document.createElement('h2');
       objParagraph = document.createElement('p');
       objAnchor = document.createElement('a');
-      objParagraph.setAttribute("role", "alert");
+//      objParagraph.setAttribute("role", "alert");
 
       if (iErrors == 1)
       {
@@ -281,6 +281,8 @@ function validateForm(objForm2)
       objTitle.appendChild(objAnchor);
       objParagraph.appendChild(document.createTextNode('Please review the following'));
       objNew.className = 'validationerrors';
+      objNew.setAttribute("aria-label","Validation Errors");
+      objNew.setAttribute("role","alert");
 
       objNew.appendChild(objTitle);
       objNew.appendChild(objParagraph);
