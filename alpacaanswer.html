@@ -10,7 +10,7 @@
   </head>
   <body>
     <header> 
-      <nav>
+      <nav  aria-label="Menu">
         <ul>
           <li>
             <div class="skl">         
@@ -20,7 +20,7 @@
         </ul> 
       <div id="menu-outer">
         <div class="table">
-          <ul id="horizontal-list">
+          <ul id="horizontal-list" >
             <li  onmouseover="hoverHome()" onmouseout="notHome()"><a href="index.html"  ><img id="home" src="home.PNG" alt="home button" ></a></li>
             <li><a  href="llamas.html" ><strong>Llamas</strong></a></li>
             <li><a href="alpacas.html" ><strong>Alpacas</strong></a></li>
@@ -37,14 +37,13 @@
     <p><H2 style="text-align:center">Answer: They prefer to sing alpacapella.</H2></p>
     <p><a href=".\alpacas.html">Back to Alpaca page</a></p>
   </main>
-    <footer> <!-- moved into the body-->
-      <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
-      
+  <footer role="contentinfo">
+        <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p>    
         <div class="nocolor">
           <p><a  href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p>
       </div>  
     
-    </foooter>        
+    </footer>        
   </body>
   <script src="myscript.js"></script>
 </html>
