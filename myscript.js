@@ -237,6 +237,8 @@ function validateForm(objForm2)
                      logError(objField[iFieldCounter], objLabel, objList, '');
                   }
                   iErrors++;
+     //             objField[Fieldcounter].setAttribute("aria-describedBy",objLabel);
+                  objField[iFieldCounter].setAttribute("aria-invalid","true");
                }
                break;
          }
@@ -263,6 +265,7 @@ function validateForm(objForm2)
       objTitle = document.createElement('h2');
       objParagraph = document.createElement('p');
       objAnchor = document.createElement('a');
+      objParagraph.setAttribute("role", "alert");
 
       if (iErrors == 1)
       {
@@ -309,17 +312,27 @@ function validateForm(objForm2)
    else
    {
 
-      let answerText="Thank you for your suggestion " + myName +". ";
-   
+//      let answerText="Thank you for your suggestion " + myName +". ";
+let answerText = "";
+
       if (isOver19(newdate))
       {
-         answerText= answerText + overagePrize + "will be sent to "+myEmail;
+         answerText= answerText + overagePrize ;
+         document.getElementById("giftset").src="winegift.png";
+         document.getElementById("giftset").setAttribute("alt","Giftbox with bottle of wine and bottle openers");
+         document.getElementById("giftset").setAttribute("title","free bottle of wine");
+ 
       }
       else{
-          answerText= answerText + underagePrize + "will be sent to "+myEmail;
-         
-      }
-      objParagraph = document.createElement('p');
+          answerText= answerText + underagePrize ;
+          document.getElementById("giftset").src="llamaposter.png";
+          document.getElementById("giftset").setAttribute("alt","poster of colourful llama with plants");
+          document.getElementById("giftset").setAttribute("title","free llama poster");
+
+ 
+         }
+/*      objParagraph = document.createElement('p');
+      objParagraph.setAttribute("role", "alert");
       objParagraph.appendChild(document.createTextNode(answerText));
 
       if (objExisting)
@@ -335,7 +348,13 @@ function validateForm(objForm2)
          objForm.insertBefore(objParagraph, 1 );
 
       }
-      
+*/
+document.getElementById("Thankheader").innerHTML= "Thank you for your suggestion " + myName;
+document.getElementById("Thankyou").innerHTML="We have received the following suggestion: <p >" +suggestiontext + "</p><p> To thank you for your suggestion,  "+ answerText + " has been sent to <strong>" + myEmail + "</strong></p><p>";    
+document.getElementById("laughingllama").setAttribute("aria-alive","polite");
+//document.getElementById("laughingllama").setAttribute("role","complementary");
+document.getElementById("laughingllama").style.visibility='visible'; 
+
 
    }
    // Submit the form

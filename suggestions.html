@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>  
-      <nav>
+      <nav aria-label="Menu">
       <ul>
         <li>
           <div class="skl">         
@@ -42,7 +42,7 @@
       <H1 id="maincontent">Accessibility Suggestions</H1>
       <section>
 
-        <div class="leftside" >
+        <div class="leftside" role="contentinfo">
           <p>Here at Jennifer's Fibre Farm we are concerned with the Accessibility of our website</p>
  
           <H2>Accessibility suggestion examples:</H2>
@@ -59,7 +59,7 @@
             <li>Add Subtitles and Captions to Videos</li>
               
           </ol>
-          <H2>Please Enter your accessibility suggestions here</H2>
+          
        
 
 
@@ -68,8 +68,9 @@
 
 
           <div class="suggestion">
-          <form>
-           <div class="validationerrors"></div> 
+          <form aria-labelledby="Suggestionform">
+            <H2 id="Suggestionform">Please Enter your accessibility suggestions here</H2>
+            <div class="validationerrors"></div> 
            
 
             
@@ -94,16 +95,18 @@
         </div>
         <article id="laughingllama" style="visibility:hidden">
           <h2 id="Thankheader">Thank you</h2>
+        
+          <p></p><img id="giftset" height=auto; max-width="100%">
           <p id="Thankyou"></p> 
         </article>
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
     <p>Jennifer's Fibre Farm Copyright 1999-2023.  All Rights Reserved.</p> 
      <div class="nocolor">
       <p><a href="mailto:jennifer.runge@hrsdc-rhdcc@gc.ca">Contact us</a></p> 
     </div> 
-    </foooter>
+    </footer>
     <script src="myscript.js"></script>
   </body>
 </html>
